@@ -1,1 +1,14 @@
+---
+- name: Install and Enable Bluetooth
+  become: true
+  pacman:
+    name: bluez bluez-utils
+    state: present
+
+- name: Enable Bluetooth Service
+  become: true
+  systemd:
+    name: bluetooth
+    enabled: yes
+    state: started
 
