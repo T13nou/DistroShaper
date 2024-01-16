@@ -1,1 +1,17 @@
+---
+- name: Install Fish Terminal
+  become: true
+  shell: yay -S fish
+
+- name: Set Fish as Default Shell
+  become: true
+  command: chsh -s /usr/bin/fish
+
+- name: Update Fish Completions
+  become: true
+  shell: fish -c 'fish_update_completions'
+
+- name: Remove Fish Greeting
+  become: true
+  shell: fish -c 'set -U fish_greeting ""'
 
