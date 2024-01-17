@@ -1,0 +1,27 @@
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - /mnt/TrueNAS/Backup
+    - /mnt/TrueNAS/Documents
+    - /mnt/TrueNAS/Downloads
+    - /mnt/TrueNAS/Elsa
+    - /mnt/TrueNAS/Etienne
+    - /mnt/TrueNAS/Gaming
+    - /mnt/TrueNAS/IT
+    - /mnt/TrueNAS/Mateo
+    - /mnt/TrueNAS/Music
+    - /mnt/TrueNAS/Photos
+    - /mnt/TrueNAS/Uploads
+    - /mnt/TrueNAS/Videos
+
+- name: mount the nfsshare in client side
+  ansible.posix.mount:
+    opts: rw,sync,hard
+    state: mounted
+    fstype: nfs
+    src: "{{item.src}}"
+    path: "{{item.path}}"
+  with_items: "{{nfsmounts}}"
