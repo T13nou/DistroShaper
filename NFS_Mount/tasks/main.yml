@@ -5,12 +5,35 @@
     mode: '0755'
   loop:
     - /mnt/TrueNAS/Backup
+    - /mnt/TrueNAS/Documents
+    - /mnt/TrueNAS/Downloads
+    - /mnt/TrueNAS/Elsa
+    - /mnt/TrueNAS/Etienne
+    - /mnt/TrueNAS/Gaming
     - /mnt/TrueNAS/IT
+    - /mnt/TrueNAS/Mateo
+    - /mnt/TrueNAS/Music
+    - /mnt/TrueNAS/Photos
+    - /mnt/TrueNAS/Uploads
+    - /mnt/TrueNAS/Videos
 
 - name: Mount an NFS volume
   ansible.posix.mount:
-    src: 192.168.2.110:/mnt/FastPool/IT
-    path: /mnt/TrueNAS/IT
+    src: 192.168.2.110:/mnt/FastPool/"{{ item }}"
+    path: /mnt/TrueNAS/"{{ item }}"
     opts: rw,sync,hard
     state: mounted
     fstype: nfs
+  loop:
+    - Backup
+    - Documents
+    - Downloads
+    - Elsa
+    - Etienne
+    - Gaming
+    - IT
+    - Mateo
+    - Music
+    - Photos
+    - Uploads
+    - Videos
