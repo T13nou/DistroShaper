@@ -19,4 +19,5 @@
     - p7zip
     - otf-font-awesome
     - ttf-droid
+    - konsave
    state: present
