@@ -24,10 +24,7 @@
     fstype: nfs
     src: "{{item.src}}"
     path: "{{item.path}}"
-  with_items: "{{nfsmounts}}"
-
-vars:
-  nfsmounts:
+  loop:
     - {  path: "/mnt/TrueNAS/Backup", src: "192.168.2.110:/mnt/FastPool/Backup" }
     - {  path: "/mnt/TrueNAS/Documents", src: "192.168.2.110:/mnt/FastPool/Documents" }
     - {  path: "/mnt/TrueNAS/Downloads", src: "192.168.2.110:/mnt/FastPool/Downloads" }
