@@ -8,7 +8,6 @@
     - gst-plugins-ugly
     - gst-libav
     - gst-plugin-pipewire
-    - mkinitcpio-firmware
     - xdg-desktop-portal
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-kde
