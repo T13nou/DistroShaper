@@ -1,24 +1,23 @@
----
 - name: Install Basic Software
-  become: true
-  shell: yay -S gst-plugins-bad gst-plugins-base gst-plugins-ugly gst-plugin-pipewire gstreamer-vaapi gst-plugins-good gst-libav gstreamer reflector-simple downgrade rebuild-detector mkinitcpio-firmware xdg-desktop-portal-gtk xdg-desktop-portal neofetch power-profiles-daemon lib32-pipewire hunspell hunspell-fr p7zip unrar ttf-liberation noto-fonts noto-fonts-emoji adobe-source-code-pro-fonts otf-font-awesome ttf-droid ntfs-3g fuse2fs exfat-utils fuse2 fuse3 bash-completion man-db man-pages --needed
-
-- gstreamer
-- gstreamer-vaapi
-- gst-plugins-good
-- gst-plugins-bad
-- gst-plugins-ugly
-- gst-libav
-- gst-plugin-pipewire
-- mkinitcpio-firmware
-- xdg-desktop-portal
-- xdg-desktop-portal-gtk
-- xdg-desktop-portal-kde
-- neofetch
-- power-profiles-daemon
-- lib32-pipewire
-- hunspell
-- hunspell-fr
-- p7zip
-- otf-font-awesome
-- ttf-droid
+  community.general.pacman:
+   name:
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-plugins-good
+    - gst-plugins-bad
+    - gst-plugins-ugly
+    - gst-libav
+    - gst-plugin-pipewire
+    - mkinitcpio-firmware
+    - xdg-desktop-portal
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-kde
+    - neofetch
+    - power-profiles-daemon
+    - lib32-pipewire
+    - hunspell
+    - hunspell-fr
+    - p7zip
+    - otf-font-awesome
+    - ttf-droid
+   state: present
