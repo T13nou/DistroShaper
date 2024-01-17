@@ -8,6 +8,6 @@
     - base_software
     - kde_software
     - game_compatibility
-    - fish_terminal
+#    - fish_terminal
     - Flatpak_Core
     - Flatpak_Softwares
