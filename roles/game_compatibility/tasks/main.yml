@@ -1,7 +1,8 @@
 ---
 - name: Increase Game Compatibility
   become: true
-  lineinfile:
+  blockinfile:
     path: /etc/sysctl.d/99-sysctl.conf
-    line: 'vm.max_map_count=16777216'
-
+    block: |
+      # Increase Game Compatibility
+      vm.max_map_count=16777216
