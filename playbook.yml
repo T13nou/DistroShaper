@@ -11,4 +11,5 @@
 #    - fish_terminal
     - Flatpak_Core
     - Flatpak_Softwares
-    - KDE_Theme
+#    - KDE_Theme
+    - NFS_Mount
