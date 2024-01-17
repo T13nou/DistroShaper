@@ -3,7 +3,7 @@
   become: true
   roles:
     - pacman_optimization
-#    - amd_drivers
+    - amd_drivers
 #    - bluetooth
 #    - base_software
 #    - kde_software
