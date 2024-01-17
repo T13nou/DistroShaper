@@ -1,0 +1,13 @@
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /mnt/TrueNAS/IT
+    state: directory
+    mode: '0755'
+
+- name: Mount an NFS volume
+  ansible.posix.mount:
+    src: 192.168.2.110:/mnt/FastPool/IT
+    path: /mnt/TrueNAS/IT
+    opts: rw,sync,hard
+    state: mounted
+    fstype: nfs
