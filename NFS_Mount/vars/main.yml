@@ -1,0 +1,4 @@
+  vars:
+    nfsmounts:
+      - {  path: "/mnt/nfs_mount", src: "192.168.0.55:/nfsshare" }
+      - {  path: "/mnt/nfs_mount_2", src: "192.168.0.55:/nfsshare_2" }
