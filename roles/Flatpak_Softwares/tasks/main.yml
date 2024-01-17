@@ -1,4 +1,6 @@
-- name: Install the spotify flatpak
+- name: Install Flatpak packages
   community.general.flatpak:
-    name:  https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+    name:
+      - com.microsoft.Edge
+      - com.rtosta.zapzap
     state: present
