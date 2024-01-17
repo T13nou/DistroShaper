@@ -1,1 +1,9 @@
+- name: Installing Flatpak
+  community.general.pacman:
+   name:
+    - flatpak
+   state: present
 
+- name: Installing Flathub repository
+  become: true
+  shell: flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
