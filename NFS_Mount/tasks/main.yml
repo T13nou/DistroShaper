@@ -17,23 +17,11 @@
     - /mnt/TrueNAS/Uploads
     - /mnt/TrueNAS/Videos
 
-- name: Mount an NFS volume
+- name: mount the nfsshare in client side
   ansible.posix.mount:
-    src: 192.168.2.110:/mnt/FastPool/"{{ item }}"
-    path: /mnt/TrueNAS/"{{ item }}"
     opts: rw,sync,hard
     state: mounted
     fstype: nfs
-  loop:
-    - Backup
-    - Documents
-    - Downloads
-    - Elsa
-    - Etienne
-    - Gaming
-    - IT
-    - Mateo
-    - Music
-    - Photos
-    - Uploads
-    - Videos
+    src: "{{item.src}}"
+    path: "{{item.path}}"
+  with_items: "{{nfsmounts}}"
