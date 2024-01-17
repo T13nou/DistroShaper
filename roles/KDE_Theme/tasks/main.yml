@@ -4,8 +4,8 @@
 
 - name: Konsave - Downloading binary
   become: true
-  shell: yay --noconfirm -S konsave
-
+  shell: pip install konsave --break-system-packages
+  
 - name: Konsave - Importing Etienne profile
   become: true
   shell: konsave -i ~/Etienne.knsv
