@@ -1,8 +1,11 @@
----
+- name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
+  ansible.builtin.file:
+    path: /etc/sysctl.d/99-sysctl.conf
+    state: touch
+
 - name: Increase Game Compatibility
   become: true
-  blockinfile:
+  lineinfile:
     path: /etc/sysctl.d/99-sysctl.conf
-    block: |
-      # Increase Game Compatibility
-      vm.max_map_count=16777216
+    line: 'vm.max_map_count=16777216'
+
