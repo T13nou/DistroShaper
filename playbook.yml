@@ -4,7 +4,7 @@
   roles:
     - pacman_optimization
     - amd_drivers
-#    - bluetooth
+    - bluetooth
 #    - base_software
 #    - kde_software
 #    - game_compatibility
