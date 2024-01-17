@@ -1,1 +1,3 @@
-
+- name: Downloading KDE Theme
+  become: true
+  shell: wget -c https://nextcloud.etienneblanchet.fr/s/eWNTBxn4Sobobgs
