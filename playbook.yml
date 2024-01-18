@@ -3,6 +3,7 @@
   become: true
   roles:
     - NFS_Mount
+    - NumLock_On
     - pacman_optimization
     - amd_drivers
     - bluetooth
