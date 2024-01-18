@@ -2,15 +2,21 @@
 #  become: true
 #  shell: cp /mnt/TrueNAS/IT/Ansible/Etienne.knsv ~/
 
-- name: Konsave - Downloading binary
-  ansible.builtin.pip:
-    name: konsave
-    extra_args: --break-system-packages
+#- name: Konsave - Downloading binary
+#  ansible.builtin.pip:
+#    name: konsave
+#    extra_args: --break-system-packages
 
-- name: Konsave - Importing Etienne profile
-  become: true
-  shell: konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
+#- name: Konsave - Importing Etienne profile
+#  become: true
+#  shell: konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
 
-- name: Konsave - Applying Etienne profile
-  become: true
-  shell: konsave -a Etienne
+#- name: Konsave - Applying Etienne profile
+#  become: true
+#  shell: konsave -a Etienne
+
+
+  - name: Git checkout
+  ansible.builtin.git:
+    repo: 'https://github.com/Prayag2/konsave.git'
+    dest: ~/konsave/
