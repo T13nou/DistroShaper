@@ -1,6 +1,6 @@
 - name: Activate NumLock On at SDDM login screen
   ansible.builtin.blockinfile:
-    path: /etc/network/interfaces
+    path: /etc/sddm.conf
     block: |
         [General]
         Numlock=on
