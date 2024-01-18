@@ -16,7 +16,7 @@
 #  shell: konsave -a Etienne
 
 
-  - name: Git checkout
+- name: Git checkout
   ansible.builtin.git:
     repo: 'https://github.com/Prayag2/konsave.git'
     dest: ~/konsave/
