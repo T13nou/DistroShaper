@@ -1,6 +1,6 @@
-- name: Konsave - Downloading KDE Theme
-  become: true
-  shell: cp /mnt/TrueNAS/IT/Ansible/Etienne.knsv ~/
+#- name: Konsave - Downloading KDE Theme
+#  become: true
+#  shell: cp /mnt/TrueNAS/IT/Ansible/Etienne.knsv ~/
 
 - name: Konsave - Downloading binary
   become: true
@@ -8,7 +8,7 @@
   
 - name: Konsave - Importing Etienne profile
   become: true
-  shell: konsave -i ~/Etienne.knsv
+  shell: konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
 
 - name: Konsave - Applying Etienne profile
   become: true
