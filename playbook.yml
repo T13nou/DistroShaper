@@ -2,14 +2,15 @@
 - hosts: localhost
   become: true
   roles:
+    - NFS_Mount
     - pacman_optimization
     - amd_drivers
     - bluetooth
     - base_software
     - kde_software
     - game_compatibility
-#    - fish_terminal
+    #    - fish_terminal
     - Flatpak_Core
     - Flatpak_Softwares
     - KDE_Theme
-    - NFS_Mount
+
