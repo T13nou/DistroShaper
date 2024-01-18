@@ -5,6 +5,7 @@
 - name: Konsave - Downloading binary
   ansible.builtin.pip:
     name: konsave
+    extra_args: --break-system-packages
 
 - name: Konsave - Importing Etienne profile
   become: true
