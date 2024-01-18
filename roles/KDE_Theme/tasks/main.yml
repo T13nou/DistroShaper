@@ -3,9 +3,9 @@
 #  shell: cp /mnt/TrueNAS/IT/Ansible/Etienne.knsv ~/
 
 - name: Konsave - Downloading binary
-  become: true
-  shell: pip install konsave --break-system-packages
-  
+  ansible.builtin.pip:
+    name: konsave
+
 - name: Konsave - Importing Etienne profile
   become: true
   shell: konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
