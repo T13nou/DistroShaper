@@ -20,3 +20,5 @@
   ansible.builtin.git:
     repo: 'https://github.com/Prayag2/konsave.git'
     dest: ~/konsave/
+    clone: yes
+    update: yes
