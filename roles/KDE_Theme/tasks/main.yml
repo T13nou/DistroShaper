@@ -19,6 +19,6 @@
 - name: Git checkout
   ansible.builtin.git:
     repo: 'https://github.com/Prayag2/konsave.git'
-    dest: /home/etienne/
+    dest: /home/etienne/konsave/
     clone: yes
     update: yes
