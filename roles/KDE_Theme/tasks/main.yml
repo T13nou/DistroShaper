@@ -19,10 +19,10 @@
 - name: Git checkout
   ansible.builtin.git:
     repo: 'https://github.com/Prayag2/konsave.git'
-    dest: /tmp/konsave/
+    dest: /home/etienne/konsave/
     clone: yes
     update: yes
 
 - name: Build the default target
   community.general.make:
-    chdir: /tmp/konsave
+    chdir: /home/etienne/konsave
