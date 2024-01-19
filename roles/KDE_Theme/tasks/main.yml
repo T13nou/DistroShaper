@@ -14,8 +14,10 @@
 
 - name: Konsave - Importing Etienne profile
   become: true
+  become_user: etienne
   shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
 
 - name: Konsave - Applying Etienne profile
   become: true
+  become_user: etienne
   shell: pipx run konsave -a Etienne
