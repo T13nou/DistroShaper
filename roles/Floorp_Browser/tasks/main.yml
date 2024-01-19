@@ -1,0 +1,24 @@
+- name: Clone Floorp repository
+  git:
+    repo: https://aur.archlinux.org/floorp-bin.git  # Remplacez par l'URL réelle du dépôt Floorp
+    dest: /home/etienne/floorp
+
+- name: Install build dependencies on Arch Linux
+  become: true
+  pacman:
+    name:
+      - base-devel
+      - gtk3  # Remplacez par les dépendances nécessaires pour Floorp
+
+- name: Build and install Floorp
+  command: >
+    make
+    chdir=/home/etienne/floorp
+  become: true
+
+- name: Optionally, create a symlink or update the PATH
+  file:
+    src: /home/etienne/floorp
+    dest: /usr/local/bin/floorp
+    state: link
+  become: true
