@@ -7,7 +7,7 @@
 #    name: konsave
 #    extra_args: --break-system-packages
 
-- name: Install tox from git repository
+- name: Install konsave from git repository on pipx isolated environment
   community.general.pipx:
     name: konsave
     source: git+https://github.com/Prayag2/konsave.git
