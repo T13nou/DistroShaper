@@ -10,9 +10,9 @@
       - base-devel
       - gtk3  # Remplacez par les dépendances nécessaires pour Floorp
 
-- name: Build and install Floorp
+- name: Build and install Floorp using makepkg
   command: >
-    make
+    makepkg -si --noconfirm
     chdir=/home/etienne/floorp
   become: true
 
