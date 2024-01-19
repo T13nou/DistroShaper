@@ -25,12 +25,10 @@
 ### Starting applying KDE config for Elsa
 
 - name: Konsave - Importing Elsa profile
-  become: true
   become_user: elsa
   shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Elsa.knsv
 
 - name: Konsave - Applying Elsa profile
-  become: true
   become_user: elsa
   shell: pipx run konsave -a Elsa
 
