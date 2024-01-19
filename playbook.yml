@@ -10,6 +10,7 @@
     - amd_drivers
     - bluetooth
     - base_software
+    - Floorp_Browser
     - kde_software
     - game_compatibility
     #    - fish_terminal
