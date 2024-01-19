@@ -22,4 +22,10 @@
     - p7zip
     - otf-font-awesome
     - ttf-droid
+    - krita
+    - discord
+    - floorp
+    - spotify
+    - steam
+    - timeshift 24.01.1-1
    state: present
