@@ -1,20 +1,20 @@
-- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- name: Add the user Dina
   ansible.builtin.user:
-    name: Dina
-    comment: John Doe
+    name: dina
+    comment: Dina
     home: /home/dina
     createhome: yes  # Créer le répertoire home
 
-- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- name: Add the user Mateo
   ansible.builtin.user:
-    name: Mateo
-    comment: John Doe
+    name: mateo
+    comment: Mateo
     home: /home/mateo
     createhome: yes  # Créer le répertoire home
 
-- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- name: Add the user Elsa
   ansible.builtin.user:
     name: Elsa
-    comment: John Doe
+    comment: Elsa
     home: /home/elsa
     createhome: yes  # Créer le répertoire home
