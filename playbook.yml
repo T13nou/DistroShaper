@@ -3,6 +3,7 @@
   become: true
   roles:
     - System_Update
+    - Create_Users
     - NFS_Mount
     - NumLock_On
     - pacman_optimization
