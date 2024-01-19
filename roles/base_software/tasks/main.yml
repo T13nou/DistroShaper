@@ -24,8 +24,8 @@
     - ttf-droid
     - krita
     - discord
-    - floorp
+    - floorp-bin
     - spotify
     - steam
-    - timeshift 24.01.1-1
+    - timeshift
    state: present
