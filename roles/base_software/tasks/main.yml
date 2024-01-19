@@ -12,6 +12,9 @@
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-kde
     - neofetch
+    - python
+    - python-pip
+    - python-pipx
     - power-profiles-daemon
     - lib32-pipewire
     - hunspell
