@@ -7,15 +7,15 @@
 #    name: konsave
 #    extra_args: --break-system-packages
 
-#- name: Konsave - Importing Etienne profile
-#  become: true
-#  shell: konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
-
-#- name: Konsave - Applying Etienne profile
-#  become: true
-#  shell: konsave -a Etienne
-
 - name: Install tox from git repository
   community.general.pipx:
     name: konsave
     source: git+https://github.com/Prayag2/konsave.git
+
+- name: Konsave - Importing Etienne profile
+  become: true
+  shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
+
+- name: Konsave - Applying Etienne profile
+  become: true
+  shell: pipx run konsave -a Etienne
