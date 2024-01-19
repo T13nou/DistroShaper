@@ -15,14 +15,7 @@
 #  become: true
 #  shell: konsave -a Etienne
 
-
-- name: Git checkout
-  ansible.builtin.git:
-    repo: 'https://github.com/Prayag2/konsave.git'
-    dest: /home/etienne/konsave/
-    clone: yes
-    update: yes
-
-- name: Build the default target
-  community.general.make:
-    chdir: /home/etienne/konsave
+- name: Install tox from git repository
+  community.general.pipx:
+    name: konsave
+    source: git+https://github.com/Prayag2/konsave.git
