@@ -21,37 +21,3 @@
   become: true
   become_user: etienne
   shell: pipx run konsave -a Etienne
-
-### Starting applying KDE config for Elsa
-
-- name: Konsave - Importing Elsa profile
-  become_user: elsa
-  shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Elsa.knsv
-
-- name: Konsave - Applying Elsa profile
-  become_user: elsa
-  shell: pipx run konsave -a Elsa
-
-### Starting applying KDE config for Dina
-
-- name: Konsave - Importing Dina profile
-  become: true
-  become_user: dina
-  shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Dina.knsv
-
-- name: Konsave - Applying Dina profile
-  become: true
-  become_user: dina
-  shell: pipx run konsave -a Dina
-
-### Starting applying KDE config for Mateo
-
-- name: Konsave - Importing Mateo profile
-  become: true
-  become_user: mateo
-  shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Mateo.knsv
-
-- name: Konsave - Applying Mateo profile
-  become: true
-  become_user: mateo
-  shell: pipx run konsave -a Mateo
