@@ -2,6 +2,7 @@
 - hosts: localhost
   become: true
   roles:
+    - System_Update
     - NFS_Mount
     - NumLock_On
     - pacman_optimization
