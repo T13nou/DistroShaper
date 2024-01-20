@@ -1,7 +1,7 @@
 # Archible
 Ansible Arch
 
-Roles available
+# Roles available
 
 Create_Users
 	
@@ -34,6 +34,6 @@ kde_software
 	
 pacman_optimization
 
-Under construction
+# Under construction
 
 yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
