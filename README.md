@@ -1,57 +1,32 @@
 # Archible
-Ansible Arch
 
+This Ansible script is designed to automate the customization of a freshly installed EndeavourOS distribution, streamlining the setup process for users. The script is organized into various roles, each responsible for specific aspects of system configuration and software installation. By executing this script, users can effortlessly apply a set of predefined configurations and install a curated collection of software tailored to enhance the EndeavourOS experience.
+
+Feel free to clone this repository and tweak playbook to your needs :)
+
+The following command installs ansible, clones this repository and lauches the ansible playbook.
+
+```
 yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+```
 
 # Roles available
 
-Create_Users
-	
-Flatpak_Core
-	
-Flatpak_Softwares
-	
-Floorp_Browser
-	
-KDE_Theme
-	
-NFS_Mount
-	
-NumLock_On/tasks
-	
-System_Update
-	
-amd_drivers
-	
-base_software
-	
-bluetooth
-	
-fish_terminal
-	
-game_compatibility
-	
-kde_software
-	
-pacman_optimization
+- [x] Working and tested
+- [ ] Under testing
 
-# Under construction
-
-# X. Ma progression <a name="progress"/>
-
-- [x] Utiliser un navigateur web open-source
-- [x] Utiliser un moteur de recherche soucieux de la vie privée
-- [x] Utiliser un Service Mail Soucieux de la Vie Privée
-- [x] Maîtriser mes données en hébergeant mon propre serveur NAS
-- [x] Avoir une hygiène de mots de passe et héberger ceux-ci sur mon infrastructure
-- [x] Reprendre le contrôle de ma liste de contacts et de mon calendrier
-- [x] Mettre en place un réseau fiable et sécurisé
-- [ ] Veiller à l'impact écologique via une approche de greenLabing - En cours
-- [x] Basculer mon PC principal sous Linux
-- [x] Héberger mon VPN pour assurer une connexion sécurisée lorsque je suis en déplacement/vacances
-- [ ] Utiliser des applications libres sur mon mobile - En cours
-- [ ] Listes mes usages et services sur Internet, trouver des alternatives libres - Pas démarré
-
-
-
-yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+- [x] Create_Users: Handles the creation of user accounts on the system.
+- [x] Flatpak_Core: Installs the core components required for Flatpak, a universal software deployment and package management system.
+- [x] Flatpak_Softwares: Installs specific Flatpak applications, extending the software availability on the system.
+- [x] KDE_Theme: Configures the KDE desktop environment's theme to enhance the visual experience.
+- [x] NFS_Mount: Sets up and mounts Network File System (NFS) shares, facilitating file sharing across a network.
+- [x] NumLock_On/tasks: Ensures NumLock is turned on by default for improved user convenience.
+- [x] System_Update: Updates the system using the Pacman package manager, ensuring software packages are up-to-date.
+- [x] amd_drivers: Installs AMD graphics drivers for optimal performance on AMD hardware.
+- [x] base_software: Installs essential base software required for a functional and productive system.
+- [x] bluetooth: Configures Bluetooth settings, providing seamless connectivity for Bluetooth devices.
+- [x] game_compatibility: Installs components to enhance game compatibility on the system.
+- [x] kde_software: Installs additional software packages for the KDE desktop environment.
+- [x] pacman_optimization: Optimizes the Pacman package manager for improved efficiency and performance.
+- [ ] Floorp_Browser: Installs the Floorp browser, providing users with an alternative web browsing option.
+- [ ] fish_terminal: Sets up the Fish terminal, a user-friendly and feature-rich command-line interface.
