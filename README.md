@@ -12,9 +12,10 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 
 # Roles available
 
+```
 - [x] Working and tested
 - [ ] Under testing
-
+```
 
 
 - [x] Create_Users: Handles the creation of user accounts on the system.
