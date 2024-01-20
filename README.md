@@ -15,6 +15,8 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 - [x] Working and tested
 - [ ] Under testing
 
+
+
 - [x] Create_Users: Handles the creation of user accounts on the system.
 - [x] Flatpak_Core: Installs the core components required for Flatpak, a universal software deployment and package management system.
 - [x] Flatpak_Softwares: Installs specific Flatpak applications, extending the software availability on the system.
