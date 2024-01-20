@@ -20,18 +20,18 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 ```
 
 
-- [x] Create_Users: Handles the creation of user accounts on the system.
-- [x] Flatpak_Core: Installs the core components required for Flatpak, a universal software deployment and package management system.
-- [x] Flatpak_Softwares: Installs specific Flatpak applications, extending the software availability on the system.
-- [x] KDE_Theme: Configures the KDE desktop environment's theme to enhance the visual experience.
-- [x] NFS_Mount: Sets up and mounts Network File System (NFS) shares, facilitating file sharing across a network.
-- [x] NumLock_On/tasks: Ensures NumLock is turned on by default for improved user convenience.
-- [x] System_Update: Updates the system using the Pacman package manager, ensuring software packages are up-to-date.
-- [x] amd_drivers: Installs AMD graphics drivers for optimal performance on AMD hardware.
-- [x] base_software: Installs essential base software required for a functional and productive system.
-- [x] bluetooth: Configures Bluetooth settings, providing seamless connectivity for Bluetooth devices.
-- [x] game_compatibility: Installs components to enhance game compatibility on the system.
-- [x] kde_software: Installs additional software packages for the KDE desktop environment.
-- [x] pacman_optimization: Optimizes the Pacman package manager for improved efficiency and performance.
+- [x] Create_Users: Handles the creation of user accounts on the system
+- [x] Flatpak_Core: Installs Flatpak and Flathub repository
+- [x] Flatpak_Softwares: Installs specific Flatpak applications
+- [x] KDE_Theme: Uses Konsave to restore KDE environment
+- [x] NFS_Mount: Sets up and mounts Network File System (NFS) shares
+- [x] NumLock_On/tasks: Ensures NumLock in SDDM
+- [x] System_Update: Updates the system using the Pacman package manager
+- [x] amd_drivers: Installs AMD graphics drivers
+- [x] base_software: Installs essential base software
+- [x] bluetooth: Installs Bluetooth and enables it
+- [x] game_compatibility: Tweaks system
+- [x] kde_software: Installs additional software packages for the KDE desktop environment
+- [x] pacman_optimization: Optimizes the Pacman package manager
 - [ ] Floorp_Browser: Installs the Floorp browser, providing users with an alternative web browsing option.
 - [ ] fish_terminal: Sets up the Fish terminal, a user-friendly and feature-rich command-line interface.
