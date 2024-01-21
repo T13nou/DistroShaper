@@ -2,3 +2,4 @@
   community.general.pacman:
     update_cache: true
     upgrade: true
+  when: ansible_facts['distribution'] == "Archlinux"
