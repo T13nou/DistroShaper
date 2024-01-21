@@ -10,3 +10,4 @@
     - vulkan-mesa-layers
     - lib32-vulkan-mesa-layers
    state: present
+   when: ansible_facts['distribution'] == "Archlinux"
