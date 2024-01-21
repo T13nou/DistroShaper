@@ -19,22 +19,22 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 - [ ] Under testing
 ```
 
-| Role/Feature  | Arch Linux | Debian | Ubuntu | OpenSuse |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| Create_Users  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Flatpak_Core  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Flatpak_Softwares  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| KDE_Theme  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| NFS_Mount  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| NumLock_On/tasks  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| System_Update | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| amd_drivers | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| base_software | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| bluetooth | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| kde_software | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| pacman_optimization | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Floorp_Browser | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| fish_terminal | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Role/Feature  | Description | Arch Linux | Debian | Ubuntu | OpenSuse |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Create_Users  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Flatpak_Core  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Flatpak_Softwares  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| KDE_Theme  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| NFS_Mount  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| NumLock_On/tasks  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| System_Update | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| amd_drivers | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| base_software | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| bluetooth | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| kde_software | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| pacman_optimization | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Floorp_Browser | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| fish_terminal | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
 - [x] Create_Users: Handles the creation of user accounts on the system
