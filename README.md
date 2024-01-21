@@ -19,6 +19,10 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 - [ ] Under testing
 ```
 
+| Role/Feature  | Arch Linux | Debian | Ubuntu | OpenSuse |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 - [x] Create_Users: Handles the creation of user accounts on the system
 - [x] Flatpak_Core: Installs Flatpak and Flathub repository
