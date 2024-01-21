@@ -28,3 +28,4 @@
     - steam
     - timeshift
    state: present
+   when: ansible_facts['distribution'] == "Archlinux"
