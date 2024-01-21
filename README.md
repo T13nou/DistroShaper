@@ -33,8 +33,8 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 | bluetooth | Installs Bluetooth and enables it | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | kde_software | Installs additional software packages for the KDE desktop environment | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | pacman_optimization | Optimizes the Pacman package manager | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
-| Floorp_Browser | Installs the Floorp browser, providing users with an alternative web browsing option. | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
-| fish_terminal | Sets up the Fish terminal, a user-friendly and feature-rich command-line interface. | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
+| Floorp_Browser | Installs the Floorp browser, providing users with an alternative web browsing option. | <img src=/images/work-in-progress.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
+| fish_terminal | Sets up the Fish terminal, a user-friendly and feature-rich command-line interface. | <img src=/images/work-in-progress.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 
 
 - [x] Create_Users: Handles the creation of user accounts on the system
