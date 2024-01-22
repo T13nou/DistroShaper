@@ -64,13 +64,13 @@
 - name: Base_Software - Install OpenSuse software basics
   community.general.zypper:
     name:
-    - gstreamer
-    - gstreamer-vaapi
-    - gst-plugins-good
-    - gst-plugins-bad
-    - gst-plugins-ugly
-    - gst-libav
-    - gst-plugin-pipewire
+#    - gstreamer
+#    - gstreamer-vaapi
+#    - gst-plugins-good
+#    - gst-plugins-bad
+#    - gst-plugins-ugly
+#    - gst-libav
+#    - gst-plugin-pipewire
     - xdg-desktop-portal
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-kde
@@ -78,8 +78,8 @@
     - python
     - python-pip
     - python-pipx
-    - power-profiles-daemon
-    - lib32-pipewire
+#    - power-profiles-daemon
+#    - lib32-pipewire
     - hunspell
     - hunspell-fr
     - p7zip
