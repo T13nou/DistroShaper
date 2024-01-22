@@ -1,0 +1,24 @@
+# NEOFETCH  ------------------------------------------------------------------
+
+    - name: install neofetch
+      pacman:
+        name:
+          - neofetch
+
+    - name: run neofetch to generate config
+      become: no
+      command: neofetch
+
+    - name: enable disk info in neofetch
+      become: no
+      lineinfile:
+        path: ~/.config/neofetch/config.conf
+        regexp: '.*# info "Disk" disk$'
+        line: '    info "Disk" disk'
+
+    - name: enable local IP info in neofetch
+      become: no
+      lineinfile:
+        path: ~/.config/neofetch/config.conf
+        regexp: '.*# info "Local IP" local_ip$'
+        line: '    info "Local IP" local_ip'
