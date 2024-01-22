@@ -1,1 +1,2 @@
-ansible-galaxy collection install ansible.posix
+- name: Ansible_Dependancies - Install ansible.posix
+  ansible.builtin.shell: ansible-galaxy collection install ansible.posix
