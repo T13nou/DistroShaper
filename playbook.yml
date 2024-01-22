@@ -2,6 +2,7 @@
 - hosts: localhost
   become: true
   roles:
+    - Ansible_Facts
 #    - System_Update
     - Create_Users
 #    - NFS_Mount
