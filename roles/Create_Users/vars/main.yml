@@ -7,3 +7,15 @@ users_to_create:
     home: /home/dina
     createhome: yes
 
+  - name: mateo
+    password: $6$sK/zpS34PT20CZrD$ywQ4SVRZ5x0t1gIG/TwHaj5FC/A4ZV1EUZu1Wz4KdnypvWItR44egtYN90J2RKcOmcpnSTvNGfKpTCw4HPoKM.
+    comment: Mateo
+    home: /home/mateo
+    createhome: yes  # Créer le répertoire home
+
+  - name: Elsa
+    password: $6$DrBEAmX81LwH8l2X$jyG0.Fl3pGxiE9Ja7Bi/JD3ue/.7lj/6NLXjRUV0jK.Fgaw/F8gFWBJvChZgEbyBnGGOovpgF1Qv5QtofZ/ib0
+    comment: Elsa
+    home: /home/elsa
+    createhome: yes  # Créer le répertoire home
+
