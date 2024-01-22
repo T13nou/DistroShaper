@@ -1,4 +1,5 @@
 # Edit with the users you want to create. By default all these users are non-admin and a home folder.
+# Password hash is generated with mkpasswd2 tool running this command "mkpasswd2 --method=sha-512"
 
 users_to_create:
   - name: dina
