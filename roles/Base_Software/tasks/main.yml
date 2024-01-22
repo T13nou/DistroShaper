@@ -24,7 +24,6 @@
     - ttf-droid
     - krita
     - discord
-    - spotify
     - steam
     - timeshift
     state: present
