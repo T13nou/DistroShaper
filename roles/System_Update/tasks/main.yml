@@ -3,3 +3,15 @@
     update_cache: true
     upgrade: true
   when: ansible_facts['distribution'] == "Archlinux"
+
+- name: Full system upgrade
+  community.general.pacman:
+    upgrade: dist
+    update_cache: yes
+  when: ansible_facts['distribution'] == "Debian"
+
+- name: Full system upgrade
+  community.general.zypper:
+    name: '*'
+    state: dist-upgrade
+  when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
