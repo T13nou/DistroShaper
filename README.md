@@ -21,15 +21,15 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 
 | Role/Feature  | Description | Arch Linux | Debian | Ubuntu | OpenSuse |
 | ------------- | ------------- |      :---:       |      :---:       |      :---:       |      :---:       |
-| Create_Users  | Handles the creation of user accounts on the system  | <img src=/images/checked.png width="30" height="30">  | <img src=/images/checked.png width="30" height="30">  | <img src=/images/checked.png width="30" height="30">  | <img src=/images/checked.png width="30" height="30"> |
+| Create_Users  | Handles the creation of user accounts on the system  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Flatpak_Core  | Installs Flatpak and Flathub repository  | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
 | Flatpak_Softwares  | Installs specific Flatpak applications | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
 | KDE_Theme  | Uses Konsave to restore KDE environment | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
-| NFS_Mount  | Sets up and mounts Network File System (NFS) shares | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
+| NFS_Mount  | Sets up and mounts Network File System (NFS) shares | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | NumLock_On/tasks  | Ensures NumLock in SDDM | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  |
-| System_Update | Updates the system using the distro package manager | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
+| System_Update | Updates the system using the distro package manager | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | amd_drivers | Installs AMD graphics drivers | <img src=/images/checked.png width="30" height="30"> | C<img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  |
-| base_software | Installs essential base software | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
+| base_software | Installs essential base software | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | Content Cell  | <img src=/images/checked.png width="30" height="30"> |
 | bluetooth | Installs Bluetooth and enables it | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | kde_software | Installs additional software packages for the KDE desktop environment | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | pacman_optimization | Optimizes the Pacman package manager | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
