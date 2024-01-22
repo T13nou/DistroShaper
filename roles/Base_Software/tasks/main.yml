@@ -1,90 +1,95 @@
 - name: Base_Software - Install Arch Linux software basics
-    community.general.pacman:
-      name:
-        - gstreamer
-        - gstreamer-vaapi
-        - gst-plugins-good
-        - gst-plugins-bad
-        - gst-plugins-ugly
-        - gst-libav
-        - gst-plugin-pipewire
-        - xdg-desktop-portal
-        - xdg-desktop-portal-gtk
-        - xdg-desktop-portal-kde
-        - neofetch
-        - python
-        - python-pip
-        - python-pipx
-        - power-profiles-daemon
-        - lib32-pipewire
-        - hunspell
-        - hunspell-fr
-        - p7zip
-        - otf-font-awesome
-        - ttf-droid
-        - krita
-        - discord
-        - spotify
-        - steam
-        - timeshift
-     state: present
-   when: ansible_facts['distribution'] == "Archlinux"
-
-
+  community.general.pacman:
+    name:
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-plugins-good
+    - gst-plugins-bad
+    - gst-plugins-ugly
+    - gst-libav
+    - gst-plugin-pipewire
+    - xdg-desktop-portal
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-kde
+    - neofetch
+    - python
+    - python-pip
+    - python-pipx
+    - power-profiles-daemon
+    - lib32-pipewire
+    - hunspell
+    - hunspell-fr
+    - p7zip
+    - otf-font-awesome
+    - ttf-droid
+    - krita
+    - discord
+    - spotify
+    - steam
+    - timeshift
+    state: present
+    when: ansible_facts['distribution'] == "Archlinux"
 
 - name: Base_Software - Install Debian/Ubuntu software basics
   ansible.builtin.apt:
     name:
-      - gstreamer
-      - gstreamer-vaapi
-      - gst-plugins-good
-      - gst-plugins-bad
-      - gst-plugins-ugly
-      - gst-libav
-      - gst-plugin-pipewire
-      - xdg-desktop-portal
-      - xdg-desktop-portal-gtk
-      - xdg-desktop-portal-kde
-      - neofetch
-      - python
-      - python-pip
-      - python-pipx
-      - power-profiles-daemon
-      - lib32-pipewire
-      - hunspell
-      - hunspell-fr
-      - p7zip
-      - otf-font-awesome
-      - ttf-droid
-      - nfs-common
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-plugins-good
+    - gst-plugins-bad
+    - gst-plugins-ugly
+    - gst-libav
+    - gst-plugin-pipewire
+    - xdg-desktop-portal
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-kde
+    - neofetch
+    - python
+    - python-pip
+    - python-pipx
+    - power-profiles-daemon
+    - lib32-pipewire
+    - hunspell
+    - hunspell-fr
+    - p7zip
+    - otf-font-awesome
+    - ttf-droid
+    - krita
+    - discord
+    - spotify
+    - steam
+    - timeshift
     state: present
     when: ansible_facts['distribution'] == "Debian"
-
 
 - name: Base_Software - Install OpenSuse software basics
   community.general.zypper:
     name:
-      - gstreamer
-      - gstreamer-vaapi
-      - gst-plugins-good
-      - gst-plugins-bad
-      - gst-plugins-ugly
-      - gst-libav
-      - gst-plugin-pipewire
-      - xdg-desktop-portal
-      - xdg-desktop-portal-gtk
-      - xdg-desktop-portal-kde
-      - neofetch
-      - python
-      - python-pip
-      - python-pipx
-      - power-profiles-daemon
-      - lib32-pipewire
-      - hunspell
-      - hunspell-fr
-      - p7zip
-      - otf-font-awesome
-      - ttf-droid
-      - nfs-common
+    - gstreamer
+    - gstreamer-vaapi
+    - gst-plugins-good
+    - gst-plugins-bad
+    - gst-plugins-ugly
+    - gst-libav
+    - gst-plugin-pipewire
+    - xdg-desktop-portal
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-kde
+    - neofetch
+    - python
+    - python-pip
+    - python-pipx
+    - power-profiles-daemon
+    - lib32-pipewire
+    - hunspell
+    - hunspell-fr
+    - p7zip
+    - otf-font-awesome
+    - ttf-droid
+    - krita
+    - discord
+    - spotify
+    - steam
+    - timeshift
     state: present
     when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
