@@ -62,7 +62,7 @@
 
 
 - name: Base_Software - Install OpenSuse software basics
-  ansible.builtin.apt:
+  community.general.zypper:
     name:
       - gstreamer
       - gstreamer-vaapi
