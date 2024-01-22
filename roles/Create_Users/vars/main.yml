@@ -1,3 +1,5 @@
+# Edit with the users you want to create. By default all these users are non-admin and a home folder.
+
 users_to_create:
   - name: dina
     password: "$6$pUS9Az3RZ8ieQaBh$.W5RVquKLgaPO/KRZG17bbGc7N/CL/k2sD6gO10ibIGwUBIQFiVRxRLnQQ1qJbMxmH26E59UwCzrhxcfjdKoc0"
@@ -5,8 +7,3 @@ users_to_create:
     home: /home/dina
     createhome: yes
 
-  - name: autre_utilisateur
-    password: "$6$un_autre_salt$un_autre_mot_de_passe_chiffre"
-    comment: "Autre Utilisateur"
-    home: /home/autre_utilisateur
-    createhome: yes
