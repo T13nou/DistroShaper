@@ -80,11 +80,11 @@
     - python-pipx
 #    - power-profiles-daemon
 #    - lib32-pipewire
-    - hunspell
-    - hunspell-fr
-    - p7zip
-    - otf-font-awesome
-    - ttf-droid
+#    - hunspell
+#    - hunspell-fr
+#    - p7zip
+#    - otf-font-awesome
+#    - ttf-droid
     - krita
     - discord
     - spotify
