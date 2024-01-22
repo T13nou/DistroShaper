@@ -3,9 +3,10 @@
   become: true
   roles:
     - Ansible_Facts
+    - Ansible_Dependancies
 #    - System_Update
     - Create_Users
-#    - NFS_Mount
+    - NFS_Mount
 #    - NumLock_On
 #    - pacman_optimization
 #    - amd_drivers
