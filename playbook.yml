@@ -2,19 +2,19 @@
 - hosts: localhost
   become: true
   roles:
-    - System_Update
+#    - System_Update
     - Create_Users
-    - NFS_Mount
-    - NumLock_On
-    - pacman_optimization
-    - amd_drivers
-    - bluetooth
-    - base_software
-    - Floorp_Browser
-    - kde_software
-    - game_compatibility
+#    - NFS_Mount
+#    - NumLock_On
+#    - pacman_optimization
+#    - amd_drivers
+#    - bluetooth
+#    - base_software
+#    - Floorp_Browser
+#    - kde_software
+#    - game_compatibility
     #    - fish_terminal
-    - Flatpak_Core
-    - Flatpak_Softwares
-    - KDE_Theme
+#    - Flatpak_Core
+#    - Flatpak_Softwares
+#    - KDE_Theme
 
