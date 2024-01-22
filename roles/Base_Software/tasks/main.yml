@@ -87,4 +87,4 @@
       - ttf-droid
       - nfs-common
     state: present
-    when: ansible_facts['distribution'] == "OpenSuse"
+    when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
