@@ -6,9 +6,10 @@
     - Ansible_Dependancies
     - System_Update
     - Base_Software
-#    - System_Update
-    - Create_Users
     - NFS_Mount
+    - System_Update
+    - Create_Users
+    - Users_Faces
 #    - NumLock_On
 #    - pacman_optimization
 #    - amd_drivers
