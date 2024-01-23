@@ -1,4 +1,4 @@
-# Edit with the users you want to create. By default all these users are non-admin and a home folder.
+a# Edit with the users you want to create. By default all these users are non-admin and a home folder.
 # Password hash is generated with mkpasswd2 tool running this command "mkpasswd2 --method=sha-512"
 
 users_to_create:
@@ -14,7 +14,7 @@ users_to_create:
     home: /home/mateo
     createhome: yes  # Créer le répertoire home
 
-  - name: Elsa
+  - name: elsa
     password: $6$DrBEAmX81LwH8l2X$jyG0.Fl3pGxiE9Ja7Bi/JD3ue/.7lj/6NLXjRUV0jK.Fgaw/F8gFWBJvChZgEbyBnGGOovpgF1Qv5QtofZ/ib0
     comment: Elsa
     home: /home/elsa
