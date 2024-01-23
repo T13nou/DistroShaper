@@ -1,0 +1,12 @@
+- name: Copy users faces
+  ansible.builtin.copy:
+    src: /mnt/TrueNAS/IT/Ansible/Users_Faces/{{ item }}
+    dest: /var/lib/AccountsService/icons/{{ item }}
+    owner: root
+    group: root
+    mode: '0644'
+  with_items:
+    - dina
+    - elsa 
+    - etienne
+    - mateo
