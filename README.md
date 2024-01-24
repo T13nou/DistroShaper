@@ -23,7 +23,7 @@ yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git &
 | ------------- | ------------- |      :---:       |      :---:       |      :---:       |      :---:       |
 | Create_Users  | Handles the creation of user accounts on the system  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Flatpak_Core  | Installs Flatpak and Flathub repository  | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
-| Flatpak_Softwares  | Installs specific Flatpak applications | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
+| Flatpak_Softwares  | Installs specific Flatpak applications | <img src=/images/checked.png width="30" height="30">  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | KDE_Theme  | Uses Konsave to restore KDE environment | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | NFS_Mount  | Sets up and mounts Network File System (NFS) shares | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | NumLock_On/tasks  | Ensures NumLock in SDDM | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  |
