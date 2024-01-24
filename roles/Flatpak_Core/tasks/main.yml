@@ -1,9 +1,36 @@
-- name: Installing Flatpak
+#- name: Installing Flatpak
+#  community.general.pacman:
+#   name:
+#    - flatpak
+#   state: present
+#   when: ansible_facts['distribution'] == "Archlinux"
+
+- name: Base_Software - Install Arch Linux software basics
   community.general.pacman:
-   name:
+    name:
     - flatpak
-   state: present
-   when: ansible_facts['distribution'] == "Archlinux"
+    state: present
+  when: ansible_facts['distribution'] == "Archlinux"
+
+- name: Base_Software - Install Debian/Ubuntu software basics
+  ansible.builtin.apt:
+    name:
+    - flatpak
+    state: present
+  when: ansible_facts['distribution'] == "Debian"
+
+- name: Base_Software - Install OpenSuse software basics
+  community.general.zypper:
+    name:
+    - flatpak
+    state: present
+  when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
+
+
+
+
+
+
 
 - name: Add Flathub repository
   community.general.flatpak_remote:
