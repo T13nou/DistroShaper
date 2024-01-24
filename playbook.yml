@@ -19,7 +19,7 @@
 #    - kde_software
 #    - game_compatibility
     #    - fish_terminal
-#    - Flatpak_Core
-#    - Flatpak_Softwares
+    - Flatpak_Core
+    - Flatpak_Softwares
 #    - KDE_Theme
 
