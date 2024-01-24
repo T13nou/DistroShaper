@@ -8,9 +8,22 @@ Feel free to clone this repository and tweak playbook to your needs :)
 
 The following command installs ansible, clones this repository and lauches the ansible playbook.
 
+
+## Arch & derivatives
 ```
 yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
+
+Debian & derivatives
+```
+sudo apt install ansible git && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+```
+
+## OpenSuse Tumbleweed
+```
+sudo zypper install ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+```
+
 
 # Roles available
 
