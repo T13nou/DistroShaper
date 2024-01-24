@@ -26,12 +26,6 @@
     state: present
   when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
 
-
-
-
-
-
-
 - name: Add Flathub repository
   community.general.flatpak_remote:
     name: flathub
