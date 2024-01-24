@@ -14,7 +14,7 @@ The following command installs ansible, clones this repository and lauches the a
 yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
 
-Debian & derivatives
+## Debian & derivatives
 ```
 sudo apt install ansible git && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
