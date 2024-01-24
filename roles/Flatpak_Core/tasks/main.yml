@@ -5,21 +5,21 @@
 #   state: present
 #   when: ansible_facts['distribution'] == "Archlinux"
 
-- name: Base_Software - Install Arch Linux software basics
+- name: Base_Software - Install Arch Linux Flatpak
   community.general.pacman:
     name:
     - flatpak
     state: present
   when: ansible_facts['distribution'] == "Archlinux"
 
-- name: Base_Software - Install Debian/Ubuntu software basics
+- name: Base_Software - Install Debian/Ubuntu Flatpak
   ansible.builtin.apt:
     name:
     - flatpak
     state: present
   when: ansible_facts['distribution'] == "Debian"
 
-- name: Base_Software - Install OpenSuse software basics
+- name: Base_Software - Install OpenSuse Flatpak
   community.general.zypper:
     name:
     - flatpak
