@@ -1,0 +1,25 @@
+- name: Drivers_AMD - Install for Arch Linux
+  community.general.pacman:
+    name:
+    - discord
+    - steam
+    state: present
+  when: ansible_facts['distribution'] == "Archlinux"
+
+#- name: Drivers_AMD - Install for Ubuntu & derivatives - Mesa Kisak
+#  ansible.builtin.apt_repository:
+#    repo: ppa:kisak/kisak-mesa
+#  when: ansible_facts['distribution'] == "Ubuntu" or 
+#        ansible_facts['distribution'] == "Zorin OS"
+
+
+- name: Drivers_AMD - Install for OpenSuse
+  community.general.zypper:
+    name:
+    - discord
+    - steam
+    state: present
+  when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
+
+
+

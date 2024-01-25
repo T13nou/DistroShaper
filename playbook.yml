@@ -9,6 +9,7 @@
   ##### System updates and base software #####
     - System_Update
     - Software_Base_Install
+    - Flatpak_Core
 
   ##### Drivers #####
     - Drivers_Bluetooth
@@ -31,7 +32,7 @@
     - Software_Fish_Install
     - Software_Floorp_Install
     - Software_KDE_Install
+    - Software_My_Applications
     - Software_My_Flatpaks
-    - Flatpak_Core
-    - Flatpak_Softwares
+    
 

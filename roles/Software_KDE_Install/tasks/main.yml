@@ -1,6 +1,7 @@
 - name: Install KDE Software
   community.general.pacman:
    name:
+    - krita
     - okular
     - kdenlive
     - print-manager
