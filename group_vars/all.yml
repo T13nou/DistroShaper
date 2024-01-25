@@ -22,7 +22,11 @@ users:
     createhome: yes  # Créer le répertoire home
 
 ########################################################################################################"
-# "Network_Shares" variable must be defined to be used in roles "Users_Create" and "Users_Faces"
+# "Network_Shares" variable must be defined to be used in role NFS_Mount
+# name: describes your share
+# type: nfs (smb not supported as of now)
+# remote_dir: ip_adress:/remote_share
+# local_dir: /local_share  (This directory will get created during the playbook execution)
 ########################################################################################################"
 
 Network_Shares:
