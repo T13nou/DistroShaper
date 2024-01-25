@@ -1,48 +1,18 @@
 # NEOFETCH  ------------------------------------------------------------------
 
-    - name: install neofetch
-      pacman:
-        name:
-          - neofetch
+- name: run neofetch to generate config
+  become: no
+  command: neofetch
 
-    ## Inspired by Lutris drivers recommendations : https://github.com/lutris/docs/blob/master/InstallingDrivers.md
-
-- name: Drivers_AMD - Install for Arch Linux
-  community.general.pacman:
-    name:
-    - lib32-mesa
-    state: present
-  when: ansible_facts['distribution'] == "Archlinux"
-
-#- name: Drivers_AMD - Install for Debian/Ubuntu
-#  ansible.builtin.apt:
-#    name:
-#    - gstreamer
-#    - timeshift
-#    state: present
-#  when: ansible_facts['distribution'] == "Debian"
-
-- name: Drivers_AMD - Install for OpenSuse
-  community.general.zypper:
-    name:
-    - kernel-firmware-amdgpu
-    - libvulkan1-32bit
-    state: present
-  when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
-
-    - name: run neofetch to generate config
-      become: no
-      command: neofetch
-
-    - name: enable disk info in neofetch
-      become: no
-      lineinfile:
+- name: enable disk info in neofetch
+    become: no
+    lineinfile:
         path: ~/.config/neofetch/config.conf
         regexp: '.*# info "Disk" disk$'
         line: '    info "Disk" disk'
 
-    - name: enable local IP info in neofetch
-      become: no
+- name: enable local IP info in neofetch
+    become: no
       lineinfile:
         path: ~/.config/neofetch/config.conf
         regexp: '.*# info "Local IP" local_ip$'
