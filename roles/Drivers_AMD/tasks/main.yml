@@ -11,6 +11,10 @@
     state: present
   when: ansible_facts['distribution'] == "Archlinux"
 
+- name: Drivers_AMD - Install for Ubuntu & derivatives - Mesa Kisak
+  ansible.builtin.apt_repository:
+    repo: ppa:kisak/kisak-mesa
+
 #- name: Drivers_AMD - Install for Debian/Ubuntu
 #  ansible.builtin.apt:
 #    name:
