@@ -32,49 +32,61 @@ users:
 Network_Shares:
   - name: Backup
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Backup
     local_dir: /mnt/TrueNAS/Backup
   - name: Documents
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Documents
     local_dir: /mnt/TrueNAS/Documents
   - name: Downloads
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Downloads
     local_dir: /mnt/TrueNAS/Downloads
   - name: Elsa
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Elsa
     local_dir: /mnt/TrueNAS/Elsa
   - name: Etienne
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Etienne
     local_dir: /mnt/TrueNAS/Etienne
   - name: Gaming
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Gaming
     local_dir: /mnt/TrueNAS/Gaming
   - name: IT
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/IT
     local_dir: /mnt/TrueNAS/IT
   - name: Mateo
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Mateo
     local_dir: /mnt/TrueNAS/Mateo
   - name: Music
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Music
     local_dir: /mnt/TrueNAS/Music
   - name: Photos
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Photos
     local_dir: /mnt/TrueNAS/Photos
   - name: Uploads
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Uploads
     local_dir: /mnt/TrueNAS/Uploads
   - name: Videos
     type: nfs # NFS or SMB
+    options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Videos
     local_dir: /mnt/TrueNAS/Videos
