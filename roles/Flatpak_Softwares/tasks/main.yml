@@ -3,4 +3,5 @@
     name:
       - com.microsoft.Edge
       - com.rtosta.zapzap
+      - com.spotify.Client
     state: present
