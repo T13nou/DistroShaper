@@ -16,3 +16,9 @@ users:
     comment: Elsa
     home: /home/elsa
     createhome: yes  # Créer le répertoire home
+
+Network_Shares:
+  - name:
+  - type: # NFS or SMB
+  - remote_dir:
+  - local_dir:
