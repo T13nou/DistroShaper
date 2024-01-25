@@ -14,8 +14,8 @@
 - name: Users_Faces - Creating Users session file
   ansible.builtin.file:
     path: /var/lib/AccountsService/users/{{ item }}
-    owner: foo
-    group: foo
+    owner: root
+    group: root
     mode: '0644'
     state: touch
   with_items:
