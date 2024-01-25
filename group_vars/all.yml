@@ -1,3 +1,7 @@
+########################################################################################################"
+# "users" variable must be defined to be used in roles "Users_Create" and "Users_Faces"
+########################################################################################################"
+
 users:
   - name: dina
     password: "$6$pUS9Az3RZ8ieQaBh$.W5RVquKLgaPO/KRZG17bbGc7N/CL/k2sD6gO10ibIGwUBIQFiVRxRLnQQ1qJbMxmH26E59UwCzrhxcfjdKoc0"
@@ -16,6 +20,10 @@ users:
     comment: Elsa
     home: /home/elsa
     createhome: yes  # Créer le répertoire home
+
+########################################################################################################"
+# "Network_Shares" variable must be defined to be used in roles "Users_Create" and "Users_Faces"
+########################################################################################################"
 
 Network_Shares:
   - name:
