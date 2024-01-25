@@ -1,4 +1,20 @@
+- name: Full system upgrade - Archlinux
+  community.general.pacman:
+    update_cache: true
+    upgrade: true
+  when: ansible_facts['distribution'] == "Archlinux"
 
+- name: Full system upgrade Debian
+  community.general.pacman:
+    upgrade: dist
+    update_cache: yes
+  when: ansible_facts['distribution'] == "Debian"
+
+- name: Full system upgrade openSUSE Tumbleweed
+  community.general.zypper:
+    name: '*'
+    state: dist-upgrade
+  when: ansible_facts['distribution'] == "openSUSE Tumbleweed"
 
 
 
