@@ -32,10 +32,15 @@ sudo zypper install ansible git-core && git clone https://github.com/T13nou/Arch
 - [ ] Under testing
 ```
 
+
+
+
+
 | Role/Feature  | Description | Arch Linux | Debian | Ubuntu | OpenSuse |
 | ------------- | ------------- |      :---:       |      :---:       |      :---:       |      :---:       |
-| Create_Users  | Handles the creation of user accounts on the system  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
-| Flatpak_Core  | Installs Flatpak and Flathub repository  | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
+| Create_Users | Handles the creation of user accounts on the system  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
+| Drivers_AMD | Installs Flatpak and Flathub repository  | <img src=/images/checked.png width="30" height="30">  |  |  | <img src=/images/checked.png width="30" height="30"> |
+| Flatpak_Core | Installs Flatpak and Flathub repository  | <img src=/images/checked.png width="30" height="30">  | Content Cell  | Content Cell  | Content Cell  |
 | Flatpak_Softwares  | Installs specific Flatpak applications | <img src=/images/checked.png width="30" height="30">  | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | KDE_Theme  | Uses Konsave to restore KDE environment | <img src=/images/checked.png width="30" height="30"> | Content Cell  | Content Cell  | Content Cell  |
 | NeoFetch_Customization | Adds disk info & local IP to Neofetch | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
