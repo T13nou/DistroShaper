@@ -5,6 +5,7 @@
     - bluez
     - bluez-utils
    state: present
+  when: ansible_facts['distribution'] == "Archlinux"
 
 - name: Enable Bluetooth Service
   become: true
