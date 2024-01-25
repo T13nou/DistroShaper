@@ -7,7 +7,7 @@
 
 - name: mount the nfsshare in client side
   ansible.posix.mount:
-    opts: defaults,timeo=900,retrans=5,_netdev
+    opts: "{{item.options}}"
     state: mounted
     fstype: "{{item.type}}"
     src: "{{item.remote_dir}}"
