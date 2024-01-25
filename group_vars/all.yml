@@ -27,50 +27,64 @@ users:
 
 Network_Shares:
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Backup
     local_dir: /mnt/TrueNAS/Backup
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Documents
     local_dir: /mnt/TrueNAS/Documents
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Downloads
     local_dir: /mnt/TrueNAS/Downloads
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Elsa
     local_dir: /mnt/TrueNAS/Elsa
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Etienne
     local_dir: /mnt/TrueNAS/Etienne
   - name:
-    type: # NFS or SMB
-    remote_dir:
+    type: NFS # NFS or SMB
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Gaming
     local_dir: /mnt/TrueNAS/Gaming
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/IT
     local_dir: /mnt/TrueNAS/IT
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Mateo
     local_dir: /mnt/TrueNAS/Mateo
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Music
     local_dir: /mnt/TrueNAS/Music
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Photos
     local_dir: /mnt/TrueNAS/Photos
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Uploads
     local_dir: /mnt/TrueNAS/Uploads
   - name:
     type: # NFS or SMB
-    remote_dir:
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/Videos
     local_dir: /mnt/TrueNAS/Videos
+
+
+        - {  ", src: "192.168.2.110:/mnt/FastPool/Backup" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Documents" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Downloads" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Elsa" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Etienne" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Gaming" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/IT" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Mateo" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Music" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Photos" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Uploads" }
+    - {  ", src: "192.168.2.110:/mnt/FastPool/Videos" }
