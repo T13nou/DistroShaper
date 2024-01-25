@@ -2,25 +2,35 @@
 - hosts: localhost
   become: true
   roles:
+  ##### Ansible debug & requirements #####
     - Ansible_Facts
     - Ansible_Dependancies
+  
+  ##### System updates and base software #####
     - System_Update
-    - Base_Software
-    - NFS_Mount
-    - System_Update
-    - Create_Users
-    - Users_Faces
+    - Software_Base_Install
+
+  ##### Drivers #####
     - Drivers_AMD
-    - NeoFetch_Customization
-#    - NumLock_On
-#    - pacman_optimization
-#    - bluetooth
-#    - base_software
-#    - Floorp_Browser
-#    - kde_software
-#    - game_compatibility
-    #    - fish_terminal
+    - System_Update # Necessary following Mesa-kisak installation un Debian/Ubuntu
+
+  ##### User environment #####
+    - NFS_Mount
+    - Users_Create
+    - Users_Faces
+    - Users_KDE_Theme_Restore
+  
+  ##### Tweaks #####
+    - Tweak_Game_Compatibility
+    - Tweak_Neofetch_Customization
+    - Tweak_NumLock_On
+    - Tweak_PackageMgr_Customization
+
+  ##### Softwares #####
+    - Software_Fish_Install
+    - Software_Floorp_Install
+    - Software_KDE_Install
+    - Software_My_Flatpaks
     - Flatpak_Core
     - Flatpak_Softwares
-#    - KDE_Theme
 
