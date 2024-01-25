@@ -11,11 +11,12 @@
     - Software_Base_Install
 
   ##### Drivers #####
+    - Drivers_Bluetooth
     - Drivers_AMD
     - System_Update # Necessary following Mesa-kisak installation un Debian/Ubuntu
 
   ##### User environment #####
-    - NFS_Mount
+    - Share_Mount
     - Users_Create
     - Users_Faces
     - Users_KDE_Theme_Restore
