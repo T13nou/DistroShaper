@@ -14,7 +14,8 @@
 - name: Drivers_AMD - Install for Ubuntu & derivatives - Mesa Kisak
   ansible.builtin.apt_repository:
     repo: ppa:kisak/kisak-mesa
-  when: ansible_facts['distribution'] == "Ubuntu"
+  when: ansible_facts['distribution'] == "Ubuntu" or 
+        ansible_facts['distribution'] == "Zorin OS"
 
 #- name: Drivers_AMD - Install for Debian/Ubuntu
 #  ansible.builtin.apt:
