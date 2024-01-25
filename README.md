@@ -21,7 +21,7 @@ sudo apt install ansible git && git clone https://github.com/T13nou/Archible.git
 
 ## OpenSuse Tumbleweed
 ```
-sudo zypper install ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+sudo zypper install --non-interactive ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
 
 
