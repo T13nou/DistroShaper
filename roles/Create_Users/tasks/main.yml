@@ -5,7 +5,7 @@
     comment: "{{ item.comment }}"
     home: "{{ item.home }}"
     createhome: "{{ item.createhome }}"
-  with_items: "{{ users_to_create }}"
+  with_items: "{{ users }}"
 
 
 
