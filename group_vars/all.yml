@@ -27,6 +27,50 @@ users:
 
 Network_Shares:
   - name:
-  - type: # NFS or SMB
-  - remote_dir:
-  - local_dir:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Backup
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Documents
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Downloads
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Elsa
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Etienne
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Gaming
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/IT
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Mateo
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Music
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Photos
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Uploads
+  - name:
+    type: # NFS or SMB
+    remote_dir:
+    local_dir: /mnt/TrueNAS/Videos
