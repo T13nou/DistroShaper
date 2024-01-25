@@ -32,49 +32,49 @@ users:
 Network_Shares:
   - name: Backup
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Backup
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Backup
     local_dir: /mnt/TrueNAS/Backup
   - name: Documents
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Documents
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Documents
     local_dir: /mnt/TrueNAS/Documents
   - name: Downloads
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Downloads
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Downloads
     local_dir: /mnt/TrueNAS/Downloads
   - name: Elsa
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Elsa
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Elsa
     local_dir: /mnt/TrueNAS/Elsa
   - name: Etienne
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Etienne
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Etienne
     local_dir: /mnt/TrueNAS/Etienne
   - name: Gaming
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Gaming
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Gaming
     local_dir: /mnt/TrueNAS/Gaming
   - name: IT
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/IT
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/IT
     local_dir: /mnt/TrueNAS/IT
   - name: Mateo
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Mateo
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Mateo
     local_dir: /mnt/TrueNAS/Mateo
   - name: Music
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Music
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Music
     local_dir: /mnt/TrueNAS/Music
   - name: Photos
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Photos
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Photos
     local_dir: /mnt/TrueNAS/Photos
   - name: Uploads
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Uploads
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Uploads
     local_dir: /mnt/TrueNAS/Uploads
   - name: Videos
     type: nfs # NFS or SMB
-    remote_dir: 192.168.2.110:/mnt/TrueNAS/Videos
+    remote_dir: 192.168.2.110:/mnt/TrueNAS/FastPool/Videos
     local_dir: /mnt/TrueNAS/Videos
