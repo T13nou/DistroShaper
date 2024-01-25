@@ -17,7 +17,9 @@
     name:
     - flatpak
     state: present
-  when: ansible_facts['distribution'] == "Debian"
+  when: ansible_facts['distribution'] == "Debian" or
+        ansible_facts['distribution'] == "Ubuntu" or 
+        ansible_facts['distribution'] == "Zorin OS"
 
 - name: Base_Software - Install OpenSuse Flatpak
   community.general.zypper:
