@@ -1,3 +1,5 @@
+## Inspired by Lutris drivers recommendations : https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+
 - name: Drivers_AMD - Install for Arch Linux
   community.general.pacman:
     name:
