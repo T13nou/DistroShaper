@@ -1,6 +1,6 @@
 - name: Install Flatpak packages
   community.general.flatpak:
     name:
-      - com.microsoft.Edge
-      - com.rtosta.zapzap
+      - "com.microsoft.Edge"
+      - "com.rtosta.zapzap"
     state: present
