@@ -1,7 +1,5 @@
 - name: Install Flatpak packages
   community.general.flatpak:
-    name:
-      - com.microsoft.Edge
-      - com.rtosta.zapzap
-      - com.spotify.Client
+    "{{ item }}"
     state: present
+  with_items: "{{ Software_Flatpak }}"

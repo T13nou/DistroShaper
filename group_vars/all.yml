@@ -92,16 +92,42 @@ Network_Shares:
     local_dir: /mnt/TrueNAS/Videos
 
 ########################################################################################################"
-# "Network_Shares" variable must be defined to be used in role NFS_Mount
-# name: describes your share
-# type: nfs (smb not supported as of now)
-# remote_dir: ip_adress:/remote_share
-# local_dir: /local_share  (This directory will get created during the playbook execution)
+# Software_ section allows you to list of the software you need to install regarding the distro targeted
+# Software_ArchLinux for ArchLinux & derivatives
+# Software_Ubuntu for Ubuntu & derivatives
+# Software_Opensuse Tumbleweed
 ########################################################################################################"
 
 Software_ArchLinux:
-  - name: Backup
-
+  ### Base Software
+  - gstreamer
+  - gstreamer-vaapi
+  - gst-plugins-good
+  - gst-plugins-bad
+  - gst-plugins-ugly
+  - gst-libav
+  - gst-plugin-pipewire
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-kde
+  - neofetch
+  - python
+  - python-pip
+  - python-pipx
+  - power-profiles-daemon
+  - lib32-pipewire
+  - hunspell
+  - hunspell-fr
+  - p7zip
+  - otf-font-awesome
+  - ttf-droid
+  - krita
+  - timeshift
+  ### Gaming part
+  - discord
+  - steam
+  - lutris
+  
 Software_Ubuntu:
   - name: Backup
 
@@ -109,4 +135,10 @@ Software_OpensuseTW:
   - name: Backup
 
 Software_Flatpak:
-  - name: Backup
+  - com.microsoft.Edge
+  - com.visualstudio.code
+  - info.febvre.Komikku
+  - com.rtosta.zapzap
+  - com.spotify.Client
+  - org.videolan.VLC
+  - us.zoom.Zoom
