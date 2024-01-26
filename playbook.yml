@@ -6,15 +6,16 @@
     - Ansible_Facts
     - Ansible_Dependancies
   
-  ##### System updates and base software #####
-    - System_Update
-    - Software_Base_Install
-    - Flatpak_Core
-
   ##### Drivers #####
     - Drivers_Bluetooth
     - Drivers_AMD
     - System_Update # Necessary following Mesa-kisak installation un Debian/Ubuntu
+
+  ##### System updates and base software #####
+#    - Software_Base_Install
+    - Flatpak_Core
+    - Software_My_Applications
+    - Software_My_Flatpaks
 
   ##### User environment #####
     - Share_Mount
@@ -32,7 +33,6 @@
     - Software_Fish_Install
     - Software_Floorp_Install
     - Software_KDE_Install
-    - Software_My_Applications
-    - Software_My_Flatpaks
+
     
 
