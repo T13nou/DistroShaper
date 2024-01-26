@@ -98,8 +98,9 @@ Network_Shares:
 # Software_Opensuse Tumbleweed
 ########################################################################################################"
 
-Software_ArchLinux:
-  ### Base Software
+Software_Archlinux:
+  ### Base ###################
+  - grub-customizer
   - gstreamer
   - gstreamer-vaapi
   - gst-plugins-good
@@ -107,23 +108,51 @@ Software_ArchLinux:
   - gst-plugins-ugly
   - gst-libav
   - gst-plugin-pipewire
+  - x264
+  - x265
+  - lame
   - xdg-desktop-portal
   - xdg-desktop-portal-gtk
   - xdg-desktop-portal-kde
   - neofetch
+  - nfs-utils
   - python
   - python-pip
   - python-pipx
   - power-profiles-daemon
   - lib32-pipewire
+  - p7zip
+  - all-repository-fonts # Meta package for all fonts in the official repositories ~1GB
+  - ttf-ms-win11-auto # Win11 fonts for Office Suites and required by certain games under Wine
+  - smbclient
+  - timeshift
+  ### KDE ###################
+  - krita
+  - okular
+  - kdenlive
+  - print-manager
+  - gwenview
+  - spectacle
+  - partitionmanager
+  - kdeplasma-addons
+  - powerdevil
+  - kcalc
+  - plasma-systemmonitor
+  - skanpage
+  - ffmpegthumbs
+  - qt6-wayland
+  - qt6-multimedia
+  - qt6-multimedia-gstreamer
+  - qt6-multimedia-ffmpeg
+  ### Productivity ###################
+  - libreoffice-fresh
+  - libreoffice-fresh-fr
   - hunspell
   - hunspell-fr
-  - p7zip
-  - otf-font-awesome
-  - ttf-droid
-  - krita
-  - timeshift
-  ### Gaming part
+  - hunspell-en_us
+  - hunspell-en_gb
+  - hunspell-es_es
+  ### Gaming ###################
   - discord
   - steam
   - lutris
@@ -135,6 +164,7 @@ Software_OpensuseTW:
   - name: Backup
 
 Software_Flatpak:
+  - one.ablaze.floorp
   - com.microsoft.Edge
   - com.visualstudio.code
   - info.febvre.Komikku
@@ -142,3 +172,4 @@ Software_Flatpak:
   - com.spotify.Client
   - org.videolan.VLC
   - us.zoom.Zoom
+  - org.kde.gcompris

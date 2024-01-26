@@ -1,9 +1,7 @@
 - name: Drivers_AMD - Install for Arch Linux
   community.general.pacman:
-    name:
-    - discord
-    - steam
-    state: present
+    "{{ item }}"
+  with_items: "{{ Software_Archlinux }}"
   when: ansible_facts['distribution'] == "Archlinux"
 
 #- name: Drivers_AMD - Install for Ubuntu & derivatives - Mesa Kisak
