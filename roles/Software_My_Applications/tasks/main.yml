@@ -1,6 +1,8 @@
-- name: Drivers_AMD - Install for Arch Linux
+- name: Software_My_Applications - Install for Arch Linux
   community.general.pacman:
-    "{{ item }}"
+    name:
+      "{{ item }}"
+    state: present
   with_items: "{{ Software_Archlinux }}"
   when: ansible_facts['distribution'] == "Archlinux"
 
@@ -11,7 +13,7 @@
 #        ansible_facts['distribution'] == "Zorin OS"
 
 
-- name: Drivers_AMD - Install for OpenSuse
+- name: Software_My_Applications - Install for OpenSuse
   community.general.zypper:
     name:
     - discord
