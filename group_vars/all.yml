@@ -99,7 +99,13 @@ Network_Shares:
 # local_dir: /local_share  (This directory will get created during the playbook execution)
 ########################################################################################################"
 
-Software:
+Software_ArchLinux:
+  - name: Backup
+
+Software_Ubuntu:
+  - name: Backup
+
+Software_OpensuseTW:
   - name: Backup
 
 Software_Flatpak:
