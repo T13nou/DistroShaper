@@ -90,3 +90,17 @@ Network_Shares:
     options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Videos
     local_dir: /mnt/TrueNAS/Videos
+
+########################################################################################################"
+# "Network_Shares" variable must be defined to be used in role NFS_Mount
+# name: describes your share
+# type: nfs (smb not supported as of now)
+# remote_dir: ip_adress:/remote_share
+# local_dir: /local_share  (This directory will get created during the playbook execution)
+########################################################################################################"
+
+Software:
+  - name: Backup
+
+Software_Flatpak:
+  - name: Backup
