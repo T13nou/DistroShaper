@@ -1,8 +1,8 @@
 <img src=https://github.com/T13nou/Archible/blob/main/images/t13nou_Arch_Linux_Terraforming_Ansible_with_text_Archible_930879c2-0545-4c05-9996-286f5f4f803d.png width="1000" height="100">
 
-# Archible
+#  DistroShaper
 
-This Ansible script is designed to automate the customization of a freshly installed EndeavourOS distribution, streamlining the setup process for users. The script is organized into various roles, each responsible for specific aspects of system configuration and software installation. By executing this script, users can effortlessly apply a set of predefined configurations and install a curated collection of software tailored to enhance the EndeavourOS experience.
+This Ansible script is designed to automate the customization of a freshly installed Linux distribution (Arch/Ubuntu/OpenSuseTW), streamlining the setup process for users. The script is organized into various roles, each responsible for specific aspects of system configuration and software installation. By executing this script, users can effortlessly apply a set of predefined configurations and install a curated collection of software tailored to enhance the EndeavourOS experience.
 
 Feel free to clone this repository and tweak playbook to your needs :)
 
@@ -14,26 +14,18 @@ The following command installs ansible, clones this repository and lauches the a
 yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
 
-## Debian & derivatives
+## Ubuntu & derivatives
 ```
 sudo apt install ansible git && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
 
 ## OpenSuse Tumbleweed
 ```
-sudo zypper install --non-interactive ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+sudo zypper install ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
 ```
 
 
 # Roles available
-
-```
-- [x] Working and tested
-- [ ] Under testing
-```
-
-
-
 
 
 | Role/Feature  | Description | Arch Linux | Debian | Ubuntu | OpenSuse |
@@ -56,18 +48,4 @@ sudo zypper install --non-interactive ansible git-core && git clone https://gith
 | fish_terminal | Sets up the Fish terminal, a user-friendly and feature-rich command-line interface. | <img src=/images/work-in-progress.png width="30" height="30"> |  |  |  |
 
 
-- [x] Create_Users: Handles the creation of user accounts on the system
-- [x] Flatpak_Core: 
-- [x] Flatpak_Softwares: 
-- [x] KDE_Theme: 
-- [x] NFS_Mount: 
-- [x] NumLock_On/tasks: 
-- [x] System_Update: 
-- [x] amd_drivers: 
-- [x] base_software: 
-- [x] bluetooth: 
-- [x] game_compatibility: Tweaks system
-- [x] kde_software: 
-- [x] pacman_optimization: 
-- [ ] Floorp_Browser: 
-- [ ] fish_terminal: 
+
