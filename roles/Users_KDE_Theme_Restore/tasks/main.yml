@@ -3,12 +3,14 @@
     name: konsave
     source: git+https://github.com/Prayag2/konsave.git
 
-- name: Konsave - Importing Etienne profile
+- name: Konsave - Importing "{{ item.name }}" profile
   become: true
-  become_user: etienne
-  shell: pipx run konsave -i /mnt/TrueNAS/IT/Ansible/Etienne.knsv
+  become_user: "{{ item.user }}"
+  shell: pipx run konsave -i "{{ item.path }}"
+  with_items: "{{ Network_Shares }}"
 
-- name: Konsave - Applying Etienne profile
+- name: Konsave - Applying "{{ item.name }}" profile
   become: true
-  become_user: etienne
-  shell: pipx run konsave -a Etienne
+  become_user: "{{ item.user }}"
+  shell: pipx run konsave -a "{{ item.name }}"
+  with_items: "{{ Network_Shares }}"
