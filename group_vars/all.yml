@@ -176,4 +176,5 @@ Software_Flatpak:
 
 Konsave_Profile_Path:
   - name: Etienne
+  - user: etienne
   - path: /mnt/TrueNAS/IT/Ansible/Etienne.knsv
