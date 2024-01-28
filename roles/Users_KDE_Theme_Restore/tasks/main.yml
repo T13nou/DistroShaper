@@ -7,10 +7,10 @@
   become: true
   become_user: "{{ item.user }}"
   shell: pipx run konsave -i "{{ item.path }}"
-  with_items: "{{ Network_Shares }}"
+  with_items: "{{ Konsave_Profile_Path }}"
 
 - name: Konsave - Applying "{{ item.name }}" profile
   become: true
   become_user: "{{ item.user }}"
   shell: pipx run konsave -a "{{ item.name }}"
-  with_items: "{{ Network_Shares }}"
+  with_items: "{{ Konsave_Profile_Path }}"
