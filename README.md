@@ -2,28 +2,32 @@
 
 #  DistroShaper
 
-This Ansible script is designed to automate the customization of a freshly installed Linux distribution (Arch/Ubuntu/OpenSuseTW), streamlining the setup process for users. The script is organized into various roles, each responsible for specific aspects of system configuration and software installation. By executing this script, users can effortlessly apply a set of predefined configurations and install a curated collection of software tailored to enhance the EndeavourOS experience.
+This Ansible script is designed to automate the customization of a freshly installed Linux distribution (Arch/Ubuntu/OpenSuseTW), streamlining the setup process for users. The script is organized into various roles, each responsible for specific aspects of system configuration and software installation. By executing this script, users can effortlessly apply a set of predefined configurations and install a curated collection of software tailored to enhance the Linux experience.
 
 Feel free to clone this repository and tweak playbook to your needs :)
 
 The following command installs ansible, clones this repository and lauches the ansible playbook.
 
+# Usage 
+1. Fork this repository
+2. Edit the variables in group_vars/all.yml (Users, Mounts, Softwares to install)
+3. Launch the following commands depending on your distro
 
-## Arch & derivatives
+**Arch & derivatives**
 ```
-yay -S ansible --noconfirm && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
-```
-
-## Ubuntu & derivatives
-```
-sudo apt install ansible git && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
-```
-
-## OpenSuse Tumbleweed
-```
-sudo zypper install ansible git-core && git clone https://github.com/T13nou/Archible.git && cd Archible && ansible-playbook -K playbook.yml
+yay -S ansible --noconfirm && git clone https://github.com/T13nou/DistroShaper.git && cd DistroShaper && ansible-playbook -K playbook.yml
 ```
 
+**Ubuntu & derivatives**
+```
+sudo apt install ansible git && git clone https://github.com/T13nou/DistroShaper.git && cd DistroShaper && ansible-playbook -K playbook.yml
+```
+
+**OpenSuse Tumbleweed**
+```
+sudo zypper install ansible git-core && git clone https://github.com/T13nou/DistroShaper.git && cd DistroShaper && ansible-playbook -K playbook.yml
+```
+4. Enter your root password and let the playbook run
 
 # Roles available
 
