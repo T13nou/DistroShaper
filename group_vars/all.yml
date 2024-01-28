@@ -173,3 +173,7 @@ Software_Flatpak:
   - org.videolan.VLC
   - us.zoom.Zoom
   - org.kde.gcompris
+
+Konsave_Profile_Path:
+  - name: Etienne
+  - path: /mnt/TrueNAS/IT/Ansible/Etienne.knsv
