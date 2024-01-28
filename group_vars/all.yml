@@ -122,8 +122,8 @@ Software_Archlinux:
   - power-profiles-daemon
   - lib32-pipewire
   - p7zip
-  - all-repository-fonts # Meta package for all fonts in the official repositories ~1GB
-  - ttf-ms-win11-auto # Win11 fonts for Office Suites and required by certain games under Wine
+  # - all-repository-fonts # Meta package for all fonts in the official repositories ~1GB
+  # - ttf-ms-win11-auto # Win11 fonts for Office Suites and required by certain games under Wine
   - smbclient
   - timeshift
   ### KDE ###################
