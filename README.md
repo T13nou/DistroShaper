@@ -6,8 +6,6 @@ This Ansible script is designed to automate the customization of a freshly insta
 
 Feel free to clone this repository and tweak playbook to your needs :)
 
-The following command installs ansible, clones this repository and lauches the ansible playbook.
-
 # Usage 
 1. Fork this repository
 2. Edit the variables in group_vars/all.yml (Users, Mounts, Softwares to install)
