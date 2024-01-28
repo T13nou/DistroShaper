@@ -1,12 +1,3 @@
-#- name: Konsave - Downloading KDE Theme
-#  become: true
-#  shell: cp /mnt/TrueNAS/IT/Ansible/Etienne.knsv ~/
-
-#- name: Konsave - Downloading binary
-#  ansible.builtin.pip:
-#    name: konsave
-#    extra_args: --break-system-packages
-
 - name: Konsave - Install from git repository on pipx isolated environment
   community.general.pipx:
     name: konsave
