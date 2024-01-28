@@ -32,7 +32,7 @@ sudo zypper install ansible git-core && git clone https://github.com/T13nou/Dist
 # Roles available
 
 
-| Role/Feature  | Description | Arch Linux | Debian | Ubuntu | OpenSuse |
+| Role/Feature  | Description | Need variables edit | Debian | Ubuntu | OpenSuse |
 | ------------- | ------------- |      :---:       |      :---:       |      :---:       |      :---:       |
 | Ansible_Dependancies | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Ansible_Facts | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
@@ -51,4 +51,4 @@ sudo zypper install ansible git-core && git clone https://github.com/T13nou/Dist
 | Tweak_PackageMgr_Customization |<img src=/images/work-in-progress.png width="30" height="30"> |  |  |  |
 | Users_Create | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Users_Faces | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
-| Users_KDE_Theme_Restore | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
+| Users_KDE_Theme_Restore | Uses konsave plugin to restore a saved KDE profile | Yes | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
