@@ -3,6 +3,10 @@
 ########################################################################################################"
 
 users:
+  - name: homer
+
+
+  
   - name: marge
     password: "$6$pUS9Az3RZ8ieQaBh$.W5RVquKLgaPO/KRZG17bbGc7N/CL/k2sD6gO10ibIGwUBIQFiVRxRLnQQ1qJbMxmH26E59UwCzrhxcfjdKoc0"
     comment: Marge
