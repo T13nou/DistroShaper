@@ -3,10 +3,6 @@
 ########################################################################################################"
 
 users:
-  - name: homer
-
-
-  
   - name: marge
     password: "$6$pUS9Az3RZ8ieQaBh$.W5RVquKLgaPO/KRZG17bbGc7N/CL/k2sD6gO10ibIGwUBIQFiVRxRLnQQ1qJbMxmH26E59UwCzrhxcfjdKoc0"
     comment: Marge
@@ -24,6 +20,12 @@ users:
     comment: Lisa
     home: /home/lisa
     createhome: yes  # Créer le répertoire home
+
+users_faces:
+  - homer
+  - marge
+  - bart
+  - lisa
 
 ########################################################################################################"
 # "Network_Shares" variable must be defined to be used in role NFS_Mount
