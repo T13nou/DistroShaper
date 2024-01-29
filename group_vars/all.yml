@@ -3,22 +3,22 @@
 ########################################################################################################"
 
 users:
-  - name: dina
+  - name: marge
     password: "$6$pUS9Az3RZ8ieQaBh$.W5RVquKLgaPO/KRZG17bbGc7N/CL/k2sD6gO10ibIGwUBIQFiVRxRLnQQ1qJbMxmH26E59UwCzrhxcfjdKoc0"
-    comment: Dina
-    home: /home/dina
+    comment: Marge
+    home: /home/marge
     createhome: yes
 
-  - name: mateo
+  - name: bart
     password: $6$sK/zpS34PT20CZrD$ywQ4SVRZ5x0t1gIG/TwHaj5FC/A4ZV1EUZu1Wz4KdnypvWItR44egtYN90J2RKcOmcpnSTvNGfKpTCw4HPoKM.
-    comment: Mateo
-    home: /home/mateo
+    comment: Bart
+    home: /home/bart
     createhome: yes  # Créer le répertoire home
 
-  - name: elsa
+  - name: lisa
     password: $6$DrBEAmX81LwH8l2X$jyG0.Fl3pGxiE9Ja7Bi/JD3ue/.7lj/6NLXjRUV0jK.Fgaw/F8gFWBJvChZgEbyBnGGOovpgF1Qv5QtofZ/ib0
-    comment: Elsa
-    home: /home/elsa
+    comment: Lisa
+    home: /home/lisa
     createhome: yes  # Créer le répertoire home
 
 ########################################################################################################"
@@ -45,16 +45,6 @@ Network_Shares:
     options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/Downloads
     local_dir: /mnt/TrueNAS/Downloads
-  - name: Elsa
-    type: nfs # NFS or SMB
-    options: defaults,timeo=900,retrans=5,_netdev
-    remote_dir: 192.168.2.110:/mnt/FastPool/Elsa
-    local_dir: /mnt/TrueNAS/Elsa
-  - name: Etienne
-    type: nfs # NFS or SMB
-    options: defaults,timeo=900,retrans=5,_netdev
-    remote_dir: 192.168.2.110:/mnt/FastPool/Etienne
-    local_dir: /mnt/TrueNAS/Etienne
   - name: Gaming
     type: nfs # NFS or SMB
     options: defaults,timeo=900,retrans=5,_netdev
@@ -65,11 +55,6 @@ Network_Shares:
     options: defaults,timeo=900,retrans=5,_netdev
     remote_dir: 192.168.2.110:/mnt/FastPool/IT
     local_dir: /mnt/TrueNAS/IT
-  - name: Mateo
-    type: nfs # NFS or SMB
-    options: defaults,timeo=900,retrans=5,_netdev
-    remote_dir: 192.168.2.110:/mnt/FastPool/Mateo
-    local_dir: /mnt/TrueNAS/Mateo
   - name: Music
     type: nfs # NFS or SMB
     options: defaults,timeo=900,retrans=5,_netdev
