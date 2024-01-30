@@ -1,7 +1,7 @@
 - name: Users_Faces - Copy users faces to /var/lib/AccountsService/icons/
   ansible.builtin.copy:
-    src: /mnt/TrueNAS/IT/Ansible/Users_Faces/{{ item.name }}
-    dest: /var/lib/AccountsService/icons/{{ item.name }}
+    src: /mnt/TrueNAS/IT/Ansible/Users_Faces/{{ item }}
+    dest: /var/lib/AccountsService/icons/{{ item }}
     owner: root
     group: root
     mode: '0644'
@@ -9,7 +9,7 @@
 
 - name: Users_Faces - Creating Users session file
   ansible.builtin.file:
-    path: /var/lib/AccountsService/users/{{ item.name }}
+    path: /var/lib/AccountsService/users/{{ item }}
     owner: root
     group: root
     mode: '0644'
@@ -18,11 +18,11 @@
 
 - name: Users_Faces - Linking users session to icon
   ansible.builtin.copy:
-    dest: /var/lib/AccountsService/users/{{ item.name }}
+    dest: /var/lib/AccountsService/users/{{ item }}
     content: |
       [User]
       Session=
       PasswordHint=
-      Icon=/var/lib/AccountsService/icons/{{ item.name }}
+      Icon=/var/lib/AccountsService/icons/{{ item }}
       SystemAccount=false
   with_items: "{{ users_faces }}"
