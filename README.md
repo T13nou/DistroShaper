@@ -6,6 +6,8 @@ This Ansible script is designed to automate the customization of a freshly insta
 
 Feel free to clone this repository and tweak playbook to your needs :)
 
+https://github.com/T13nou/DistroShaper/assets/64090484/cea5dbc0-8181-46a0-9dff-42d6400b2e32
+
 # Usage 
 1. Fork this repository
 2. Edit the variables in group_vars/all.yml (Users, Mounts, Softwares to install)
