@@ -13,3 +13,16 @@ sudo make install
 To uninstall arch-update, go into the extracted/cloned directory and run the following command:
 
 sudo make uninstall
+
+
+
+- name: Clone Arch-Update repository
+  git:
+    repo: https://github.com/Antiz96/arch-update.git
+    dest: /tmp
+
+- name: Build and install Arch-Update using makepkg
+  command: >
+    makepkg -si --noconfirm
+    chdir=/tmp/arch-update/
+  become: true
