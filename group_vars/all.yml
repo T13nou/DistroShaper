@@ -117,6 +117,10 @@ Software_Archlinux:
   # - ttf-ms-win11-auto # Win11 fonts for Office Suites and required by certain games under Wine
   - smbclient
   - timeshift
+  - pacman-contrib
+  - curl
+  - htmlq
+  - diffutils
   ### KDE ###################
   - krita
   - okular
