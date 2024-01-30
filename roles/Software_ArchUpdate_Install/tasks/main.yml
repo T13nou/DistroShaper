@@ -1,21 +1,3 @@
-From Source
-
-Install dependencies:
-
-sudo pacman -S --needed pacman-contrib curl htmlq diffutils
-
-Download the archive of the latest stable release and extract it (alternatively, you can clone this repository via git).
-
-To install arch-update, go into the extracted/cloned directory and run the following command:
-
-sudo make install
-
-To uninstall arch-update, go into the extracted/cloned directory and run the following command:
-
-sudo make uninstall
-
-
-
 - name: Clone Arch-Update repository
   git:
     repo: https://github.com/Antiz96/arch-update.git
