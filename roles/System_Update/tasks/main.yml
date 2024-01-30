@@ -5,7 +5,7 @@
   when: ansible_facts['distribution'] == "Archlinux"
 
 - name: Full system upgrade Debian
-  community.general.pacman:
+  community.general.apt:
     upgrade: dist
     update_cache: yes
   when: ansible_facts['distribution'] == "Debian"
