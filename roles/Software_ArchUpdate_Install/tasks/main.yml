@@ -1,7 +1,7 @@
 - name: Clone Arch-Update repository
   git:
     repo: https://github.com/Antiz96/arch-update.git
-    dest: /tmp
+    dest: /tmp/arch-update/
 
 - name: Build and install Arch-Update using makepkg
   command: >
