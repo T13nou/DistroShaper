@@ -8,3 +8,4 @@
     makepkg -si --noconfirm
     chdir=/tmp/arch-update/
   become: true
+  become_user: homer
