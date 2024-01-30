@@ -3,9 +3,8 @@
     repo: https://github.com/Antiz96/arch-update.git
     dest: /tmp/arch-update/
 
-- name: Build and install Arch-Update using makepkg
-  command: >
-    makepkg -si --noconfirm
-    chdir=/tmp/arch-update/
+- name: Run 'install' target as root
+  community.general.make:
+    chdir: /tmp/arch-update/
+    target: install
   become: true
-  become_user: homer
