@@ -16,6 +16,7 @@
     - Flatpak_Core
     - Software_My_Applications
     - Software_My_Flatpaks
+    - Software_ArchUpdate_Install
 
   ##### User environment #####
     - Share_Mount
