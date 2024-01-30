@@ -278,6 +278,6 @@ Software_Flatpak:
   - org.kde.gcompris
 
 Konsave_Profile_Path:
-  - name: Etienne
-    user: etienne # lower case
-    path: /mnt/TrueNAS/IT/Ansible/Etienne-New.knsv
+  - name: Homer
+    user: homer # lower case
+    path: /mnt/TrueNAS/IT/Ansible/Homer.knsv
