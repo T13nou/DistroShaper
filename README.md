@@ -34,7 +34,7 @@ sudo zypper install ansible git-core && git clone https://github.com/T13nou/Dist
 
 | Role/Feature  | Description | Need variables edit | Arch | Ubuntu | OpenSuseTW |
 | ------------- | ------------- |      :---:       |      :---:       |      :---:       |      :---:       |
-| Ansible_Dependancies | Installs some ansible dependancies for the paybook to run properly | No | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
+| Ansible_Dependencies | Installs some ansible dependancies for the paybook to run properly | No | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Ansible_Facts | Displays ansible facts (for debug only) | No | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Drivers_AMD | Installs AMD Drivers | No | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
 | Drivers_Bluetooth | Installs and enables bluetooth | No| <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> | <img src=/images/checked.png width="30" height="30"> |
